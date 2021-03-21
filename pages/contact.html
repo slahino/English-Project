@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Porfolio - Home</title>
+	<link rel="icon" type="image/png" href="../entete/slahino.png" />
+	<style type="text/css">
+		@font-face {
+			font-family: "Tahu Bullats Italic";
+			src: url('../fonts/Coolvetica rg.ttf');
+		}
+
+		body {
+			margin :  0px;
+			padding : 0px;
+			background-color: black;
+			font-family: "Tahu Bullats Italic";
+		}
+		header {
+			border-bottom: 5px black solid;
+			background-color: white;
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			margin :  0px;
+		}
+		footer {
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			margin :  0px;
+			background-color: black;
+			padding:  20px 20px 0px 20px;
+			color :  white;
+		}
+		ul {
+			padding :  0;
+			display : grid;
+			grid-template-columns: repeat(8,1fr);
+		}
+		.menu {
+			grid-column: 3/11;             
+    	}
+    	.menu li {
+   			list-style-type: none;  
+   			text-align: center; 
+   			padding : 0em 0.5em 0em 0.5em;
+		}
+		.menu a {
+    		margin :  auto;
+    		color: black;  
+    		text-decoration: none; 
+    		letter-spacing: 2px;
+		}
+		.logo {
+			margin-left: auto;
+			margin-right: auto;
+			width: 200px;
+		 	height: 100px; 
+		 	padding : 0px 0px 0px 0px;
+		}
+		.icon {
+			width: 50px;
+		 	height: 50px;  	
+		}
+		.icon2{
+			width: 50px;
+		 	height: 50px;
+			margin-left :  80px;
+		}
+		section#presentation {
+			background-color: #ddd4d4;
+			display : grid;
+			grid-template-columns: repeat(18,1fr);
+			grid-template-rows: repeat(8,1fr);
+
+		}
+		section > p {
+			margin :  0;
+			font-size: 1.3em;
+			text-align: justify;
+			
+		}
+		footer > p {
+			grid-column: 5/11;
+			font-size: 1.5em;
+			text-align: right;
+		}
+		h3 {
+			padding-top : 20px;
+		}
+		h3#adress {
+			margin :  0;
+			grid-column: 10/19;
+			grid-row: 3/4;
+			font-size: 1.7em;
+			color :  white;
+			letter-spacing: .2rem;
+			text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 3px 3px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+		}
+		h3#phone {
+			margin :  0;
+			grid-column: 10/19;
+			grid-row: 4/5;
+			font-size: 1.7em;
+			color :  white;
+			letter-spacing: .2rem;
+			text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 3px 3px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+		}
+		h3#mail {
+			margin :  0;
+			grid-column: 10/19;
+			grid-row: 5/6;
+			font-size: 1.7em;
+			color :  white;
+			letter-spacing: .2rem;
+			text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 3px 3px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+		}
+		#cv{
+			margin-left :  auto;
+			margin-right :  auto;
+			grid-column: 8/18;
+			grid-row: 6/7;
+			text-decoration: none;
+			color :  black;
+
+		}
+		#cv:hover {
+			color :  green;
+		}
+		div#media {
+			grid-column: 10/18;
+			grid-row: 7/8;
+		}
+		form {
+		  max-width: 400px;
+		  border-radius: 2px;
+		  grid-column: 2/9;
+		  grid-row: 2/14;
+		}
+		h2 {
+		    margin:0 0 50px 0;
+		    padding:10px;
+		    text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 3px 3px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+		    text-align:center;
+		    font-size:30px;
+		    color: white;
+		}
+		p {
+		    margin: 0 0 3em 0;
+		    position: relative;
+		}
+		input {
+		    display: block;
+		    box-sizing: border-box;
+		    width: 100%;
+		    outline: none;
+		    margin:0;
+		}
+		input[type="text"],
+		input[type="email"] {
+		    background: #fff;
+		    border: 2px solid black;
+		    font-size: 1.6em;
+		    padding: .7em .5em;
+		    border-radius: 2px;
+		}
+		button {
+		   	background: rgba(148,186,101,0.7); 
+		    color: #fff;
+		    cursor: pointer;
+		    display: block;
+		    font-size: 1.2em;
+		    margin-right :  auto;
+		    margin-left :  auto;
+		    outline: none;
+		    padding: 10px 0;
+		    text-shadow: 1px 1px black;
+		    width :  50%;
+		}
+		button:hover {
+		 	background:  rgba(148,175,101,1);
+		}
+		label{
+		    position: absolute;
+		    left: 8px;
+		    top: 12px;
+		    color: #999;
+		    font-size: 16px;
+		    display: inline-block;
+		    padding: 4px 10px;
+		    font-weight: 400;
+		    background-color: rgba(255,255,255,0);
+		}
+		.floatLabel{
+		      top: -11px;
+		      background-color: rgba(255,255,255,1);
+		      font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="../index.html">
+			<img class="logo" alt="Logo" src="../entete/slahino.png"/>
+		</a>
+		<div class="menu">
+			<ul>
+			    <li>
+			        <a href="../index.html"><img class="icon" src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" /><br />Home page</a>
+			    </li>
+			    <li>
+			        <a href="draw.html"><img class="icon" src="https://icons-for-free.com/iconfiles/png/512/brush+design+draw+drawing+icon-1320168140159902387.png"/><br />Drawing</a>
+			    </li>
+			    <li>
+			        <a href="graphism.html"><img class="icon" src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/illustration-icon.png"/><br />Graphism</a>
+			    </li>
+			    <li>
+			        <a href="modeling.html"><img class="icon" src="https://image.flaticon.com/icons/png/512/1454/1454773.png"/><br />Modeling 3D</a>
+			    </li>
+			    <li>
+			        <a href="website.html"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Puzzle-grey.png"/><br />Website teaser</a>
+			    </li>
+			    <li>
+			        <a href="development.html"><img class="icon" src="https://i.pinimg.com/originals/e6/d8/ab/e6d8ab6b59c0b25c5587f6df309f360a.png"/><br />Development web<br /></a>
+			    </li>
+			    <li>
+			        <a href="tutorial.html"><img class="icon" src="https://www.rhumraisin.com/img/video-camera-icon.png"/><br />Tutorial video</a>
+			    </li>
+			    <li>
+			        <a href="contact.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle-icons-contacts.svg/1024px-Circle-icons-contacts.svg.png"/><br />Contact me</a>
+			    </li>
+			</ul>
+		</div>
+	</header>
+	<img src="../entete/contact.jpg" width="100%"/>
+	<section id="presentation">	
+
+	<form action="#" method="post">
+  		<h2>CONTACT ME</h2>
+		<p>
+			<label for="Name" class="floatLabel">NAME</label>
+			<input id="name" name="name" type="text">
+		</p>
+		<p>
+			<label for="Email" class="floatLabel">EMAIL</label>
+			<input id="email" name="email" type="email">
+			
+		</p>
+		<p>
+			<label for="message" class="floatLabel">MESSAGE</label>
+			<input id="message" name="message" type="text">
+		</p>
+		<p>
+			<button type="submit" value="Create My Account" id="submit">SEND YOUR MAIL</button>
+		</p>
+	</form>
+
+	<h3 id="adress">450 chemin de la Lauve, SAINT RAPHAEL 83700</h3>	
+	<h3 id="phone">07.67.47.03.80</h3>	
+	<h3 id="mail">souaa.yassine@gmail.com</h3>	
+
+	<a href="../pdf/CV.pdf" id="cv" target="_blank" download >Download CV / Resume</a>
+
+	<div id="media">
+		<a href="https://www.instagram.com/slahinoo83/"><img class="icon2" alt="instagram" src="https://image.flaticon.com/icons/png/512/2175/2175198.png"/></a>
+		<a href="https://www.linkedin.com/in/yassine-soua-323121205/"><img class="icon2" alt="linkedin" src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/linkedin-512.png"/></a>
+		<a href="https://github.com/slahino"><img class="icon2" alt="github" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png"/></a>
+		<a href="mailto:souaa.yassine@gmail.com"><img class="icon2" alt="gmail" src="https://i.pinimg.com/originals/1b/3b/ec/1b3bec070f7bb1c007dbaaeafaeb21b7.png"/></a>
+	</div>
+
+</body>
+</html>
+	</section>
+	<footer>
+		<a href="https://www.instagram.com/slahinoo83/"><img class="icon" alt="instagram" src="https://www.pngkey.com/png/full/283-2831746_insta-icon-instagram.png"/></a>
+		<a href="https://www.linkedin.com/in/yassine-soua-323121205/"><img class="icon" alt="linkedin" src="https://www.linkmobility.fr/wp-content/uploads/2015/11/linkedin-icon.png"/></a>
+		<a href="https://github.com/slahino"><img class="icon" alt="github" src="https://img.utdstc.com/icon/b41/580/b41580675029b67195f428df8843d16945303ee9346bbe189dd98dc1210033c2:200"/></a>
+		<a href="mailto:souaa.yassine@gmail.com"><img class="icon" alt="gmail" src="https://image.flaticon.com/icons/png/512/355/355992.png"/></a>
+		<p>Copyright 2021 &copy;</p>
+	</footer>
+</body>
+</html>

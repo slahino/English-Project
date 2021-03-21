@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Porfolio - Home</title>
+	<link rel="icon" type="image/png" href="../entete/slahino.png" />
+	<style type="text/css">
+		@font-face {
+			font-family: "Tahu Bullats Italic";
+			src: url('../fonts/Coolvetica rg.ttf');
+		}
+
+		body {
+			margin :  0px;
+			padding : 0px;
+			background-color: black;
+			font-family: "Tahu Bullats Italic";
+		}
+		header {
+			border-bottom: 5px black solid;
+			background-color: white;
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			margin :  0px;
+		}
+		footer {
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			margin :  0px;
+			background-color: black;
+			padding:  20px 20px 0px 20px;
+			color :  white;
+		}
+		ul {
+			padding :  0;
+			display : grid;
+			grid-template-columns: repeat(8,1fr);
+		}
+		.menu {
+			grid-column: 3/11;             
+    	}
+    	.menu li {
+   			list-style-type: none;  
+   			text-align: center; 
+   			padding : 0em 0.5em 0em 0.5em;
+		}
+		.menu a {
+    		margin :  auto;
+    		color: black;  
+    		text-decoration: none; 
+    		letter-spacing: 2px;
+		}
+		.logo {
+			margin-left: auto;
+			margin-right: auto;
+			width: 200px;
+		 	height: 100px; 
+		 	padding : 0px 0px 0px 0px;
+		}
+		.icon {
+			width: 50px;
+		 	height: 50px; 
+		}
+		section#presentation {
+			background-color: #ddd4d4;
+			display : grid;
+			grid-template-columns: repeat(18,1fr);
+			grid-template-rows: repeat(10,1fr);
+
+		}
+		h3 {
+			margin :  auto;
+			font-size: 1.7em;
+			color :  white;
+			letter-spacing: .2rem;
+			text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 3px 3px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+		}
+		section > p {
+			margin :  0;
+			font-size: 1.3em;
+			text-align: justify;
+			
+		}
+		footer > p {
+			grid-column: 5/11;
+			font-size: 1.5em;
+			text-align: right;
+		}
+		video#blender {
+			grid-column: 4/8;
+			grid-row: 2/5;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		video#sabre {
+			grid-column: 12/16;
+			grid-row: 2/5;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#blender{
+			grid-column: 4/8;
+			grid-row: 5/6;
+		}
+		h3#sabre {
+			grid-column: 12/16;
+			grid-row: 5/6;
+		}
+		p#blender{
+			grid-column: 4/8;
+			grid-row: 6/10;
+		}
+		p#sabre {
+			grid-column: 12/16;
+			grid-row: 6/10;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="../index.html">
+			<img class="logo" alt="Logo" src="../entete/slahino.png"/>
+		</a>
+		<div class="menu">
+			<ul>
+			    <li>
+			        <a href="../index.html"><img class="icon" src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" /><br />Home page</a>
+			    </li>
+			    <li>
+			        <a href="draw.html"><img class="icon" src="https://icons-for-free.com/iconfiles/png/512/brush+design+draw+drawing+icon-1320168140159902387.png"/><br />Drawing</a>
+			    </li>
+			    <li>
+			        <a href="graphism.html"><img class="icon" src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/illustration-icon.png"/><br />Graphism</a>
+			    </li>
+			    <li>
+			        <a href="modeling.html"><img class="icon" src="https://image.flaticon.com/icons/png/512/1454/1454773.png"/><br />Modeling 3D</a>
+			    </li>
+			    <li>
+			        <a href="website.html"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Puzzle-grey.png"/><br />Website teaser</a>
+			    </li>
+			    <li>
+			        <a href="development.html"><img class="icon" src="https://i.pinimg.com/originals/e6/d8/ab/e6d8ab6b59c0b25c5587f6df309f360a.png"/><br />Development web<br /></a>
+			    </li>
+			    <li>
+			        <a href="tutorial.html"><img class="icon" src="https://www.rhumraisin.com/img/video-camera-icon.png"/><br />Tutorial video</a>
+			    </li>
+			    <li>
+			        <a href="contact.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle-icons-contacts.svg/1024px-Circle-icons-contacts.svg.png"/><br />Contact me</a>
+			    </li>
+			</ul>
+		</div>
+	</header>
+	<img src="../entete/website.jpg" width="100%"/>
+		<section id="presentation">	
+		<video id="blender" controls src="../website/Site_Bebito.mp4" width="100%" poster="../website/bebito.png"></video>
+		<h3 id="blender">BEBITO</h3>
+		<p id="blender">I did more than one site in Wordpress, but I preferred to show you these. Here we have a site for a seller of the traditional Argentinian tea called mate. This site was at first a blog, but she wanted to make it gainful. 
+		</p>
+
+		<video id="sabre" controls src="../website/Site_Boxe_Avenue.mp4" width="100%" poster="../website/boxeAvenue.png"></video>
+		<h3 id="sabre">BOXE AVENUE</h3>
+		<p id="sabre">This one is made with Prestashop, it is gainful and offers boxing equipment, food and clothing. The company doesn’t exist, we had to create it. I will let you look at these sites for yourself and make your opinion.   
+		</p>
+	</section>
+	<footer>
+		<a href="https://www.instagram.com/slahinoo83/"><img class="icon" alt="instagram" src="https://www.pngkey.com/png/full/283-2831746_insta-icon-instagram.png"/></a>
+		<a href="https://www.linkedin.com/in/yassine-soua-323121205/"><img class="icon" alt="linkedin" src="https://www.linkmobility.fr/wp-content/uploads/2015/11/linkedin-icon.png"/></a>
+		<a href="https://github.com/slahino"><img class="icon" alt="github" src="https://img.utdstc.com/icon/b41/580/b41580675029b67195f428df8843d16945303ee9346bbe189dd98dc1210033c2:200"/></a>
+		<a href="mailto:souaa.yassine@gmail.com"><img class="icon" alt="gmail" src="https://image.flaticon.com/icons/png/512/355/355992.png"/></a>
+		<p>Copyright 2021 &copy;</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Porfolio - Home</title>
+	<link rel="icon" type="image/png" href="../entete/slahino.png" />
+	<style type="text/css">
+		@font-face {
+			font-family: "Tahu Bullats Italic";
+			src: url('../fonts/Coolvetica rg.ttf');
+		}
+
+		body {
+			margin :  0px;
+			padding : 0px;
+			background-color: black;
+			font-family: "Tahu Bullats Italic";
+		}
+		header {
+			border-bottom: 5px black solid;
+			background-color: white;
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			margin :  0px;
+		}
+		footer {
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			margin :  0px;
+			background-color: black;
+			padding:  20px 20px 0px 20px;
+			color :  white;
+		}
+		ul {
+			padding :  0;
+			display : grid;
+			grid-template-columns: repeat(8,1fr);
+		}
+		.menu {
+			grid-column: 3/11;             
+    	}
+    	.menu li {
+   			list-style-type: none;  
+   			text-align: center; 
+   			padding : 0em 0.5em 0em 0.5em;
+		}
+		.menu a {
+    		margin :  auto;
+    		color: black;  
+    		text-decoration: none; 
+    		letter-spacing: 2px;
+		}
+		.logo {
+			margin-left: auto;
+			margin-right: auto;
+			width: 200px;
+		 	height: 100px; 
+		 	padding : 0px 0px 0px 0px;
+		}
+		.icon {
+			width: 50px;
+		 	height: 50px; 
+		}
+		section#presentation {
+			background-color: #ddd4d4;
+			display : grid;
+			grid-template-columns: repeat(18,1fr);
+			grid-template-rows: repeat(45,1fr);
+
+		}
+		img#boxcinema {
+			grid-column: 2/5;
+			grid-row: 2/5;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#boxcinema2 {
+			grid-column: 6/9;
+			grid-row: 2/5;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#boxcinema{
+			grid-column: 10/18;
+			grid-row: 2/3;
+		}
+		p#boxcinema{
+			grid-column: 10/18;
+			grid-row: 3/5;
+			padding :  0;
+		}
+
+		img#pixels {
+			grid-column: 11/14;
+			grid-row: 6/8;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#pixels2 {
+			grid-column: 15/18;
+			grid-row: 6/8;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#pixels {
+			grid-column: 2/10;
+			grid-row: 6/7;
+		}
+		p#pixels{
+			grid-column: 2/10;
+			grid-row: 7/9;
+			padding :  0;
+		}
+
+		img#imc {
+			grid-column: 2/5;
+			grid-row: 10/13;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#imc2 {
+			grid-column: 6/9;
+			grid-row: 10/13;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#imc{
+			grid-column: 10/18;
+			grid-row: 10/11;
+		}
+		p#imc{
+			grid-column: 10/18;
+			grid-row: 11/13;
+			padding :  0;
+		}
+
+		img#grid {
+			grid-column: 11/14;
+			grid-row: 14/17;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#grid2 {
+			grid-column: 15/18;
+			grid-row: 14/17;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#grid {
+			grid-column: 2/10;
+			grid-row: 14/15;
+		}
+		p#grid{
+			grid-column: 2/10;
+			grid-row: 15/17;
+			padding :  0;
+		}
+
+		img#twitter {
+			grid-column: 2/5;
+			grid-row: 18/21;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#twitter2 {
+			grid-column: 6/9;
+			grid-row: 18/21;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#twitter{
+			grid-column: 10/18;
+			grid-row: 18/19;
+		}
+		p#twitter{
+			grid-column: 10/18;
+			grid-row:  19/21;
+			padding :  0;
+		}
+
+		img#trattoria {
+			grid-column: 11/14;
+			grid-row: 22/25;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#trattoria2 {
+			grid-column: 15/18;
+			grid-row: 22/25;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#trattoria {
+			grid-column: 2/10;
+			grid-row: 22/23;
+		}
+		p#trattoria{
+			grid-column: 2/10;
+			grid-row: 23/25;
+			padding :  0;
+		}
+
+		img#mediaphoto {
+			grid-column: 2/5;
+			grid-row: 26/29;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#mediaphoto2 {
+			grid-column: 6/9;
+			grid-row: 26/29;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#mediaphoto{
+			grid-column: 10/18;
+			grid-row: 26/27;
+		}
+		p#mediaphoto{
+			grid-column: 10/18;
+			grid-row: 27/29;
+			padding :  0;
+		}
+
+		img#interop {
+			grid-column: 11/14;
+			grid-row: 30/33;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#interop2 {
+			grid-column: 15/18;
+			grid-row: 30/33;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#interop {
+			grid-column: 2/10;
+			grid-row: 30/31;
+		}
+		p#interop{
+			grid-column: 2/10;
+			grid-row: 31/33;
+			padding :  0;
+		}
+
+		img#battle {
+			grid-column: 2/5;
+			grid-row: 34/37;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#battle2 {
+			grid-column: 6/9;
+			grid-row: 34/37;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#battle{
+			grid-column: 10/18;
+			grid-row: 34/35;
+		}
+		p#battle{
+			grid-column: 10/18;
+			grid-row: 35/37;
+			padding :  0;
+		}
+
+		img#coop {
+			grid-column: 11/14;
+			grid-row: 38/41;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#coop2 {
+			grid-column: 15/18;
+			grid-row: 38/41;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#coop {
+			grid-column: 2/10;
+			grid-row: 38/39;
+		}
+		p#coop{
+			grid-column: 2/10;
+			grid-row: 39/41;
+			padding :  0;
+		}
+
+		img#racingmaze {
+			grid-column: 2/5;
+			grid-row: 42/45;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#racingmaze2 {
+			grid-column: 6/9;
+			grid-row: 42/45;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#racingmaze {
+			grid-column: 10/18;
+			grid-row: 42/43;
+		}
+		p#racingmaze{
+			grid-column: 10/18;
+			grid-row: 43/45;
+			padding :  0;
+		}
+
+		h3 {
+			margin :  0;
+			grid-column: 5/10;
+			grid-row: 3/4;
+			font-size: 1.7em;
+			color :  white;
+			letter-spacing: .2rem;
+			text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 3px 3px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+		}
+		section > p {
+			margin :  0;
+			grid-column: 5/10;
+			grid-row: 5/9;
+			font-size: 1.5em;
+			text-align: justify;
+			padding-left :  2em;
+			
+		}
+		footer > p {
+			grid-column: 5/11;
+			font-size: 1.5em;
+			text-align: right;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<a href="../index.html">
+			<img class="logo" alt="Logo" src="../entete/slahino.png"/>
+		</a>
+		<div class="menu">
+			<ul>
+			    <li>
+			        <a href="../index.html"><img class="icon" src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" /><br />Home page</a>
+			    </li>
+			    <li>
+			        <a href="draw.html"><img class="icon" src="https://icons-for-free.com/iconfiles/png/512/brush+design+draw+drawing+icon-1320168140159902387.png"/><br />Drawing</a>
+			    </li>
+			    <li>
+			        <a href="graphism.html"><img class="icon" src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/illustration-icon.png"/><br />Graphism</a>
+			    </li>
+			    <li>
+			        <a href="modeling.html"><img class="icon" src="https://image.flaticon.com/icons/png/512/1454/1454773.png"/><br />Modeling 3D</a>
+			    </li>
+			    <li>
+			        <a href="website.html"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Puzzle-grey.png"/><br />Website teaser</a>
+			    </li>
+			    <li>
+			        <a href="development.html"><img class="icon" src="https://i.pinimg.com/originals/e6/d8/ab/e6d8ab6b59c0b25c5587f6df309f360a.png"/><br />Development web<br /></a>
+			    </li>
+			    <li>
+			        <a href="tutorial.html"><img class="icon" src="https://www.rhumraisin.com/img/video-camera-icon.png"/><br />Tutorial video</a>
+			    </li>
+			    <li>
+			        <a href="contact.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle-icons-contacts.svg/1024px-Circle-icons-contacts.svg.png"/><br />Contact me</a>
+			    </li>
+			</ul>
+		</div>
+	</header>
+	<img src="../entete/development.jpg" width="100%"/>
+	<section id="presentation">	
+
+		<img id="boxcinema" alt="photo" src="../development/boxcinema.png" width="100%"/>
+		<img id="boxcinema2" alt="photo" src="../development/boxcinema2.png" width="100%"/>
+		<h3 id="boxcinema">BOX-CINEMA</h3>
+		<p id="boxcinema">One of my first project was BOXCINEMA where I had to make a website with HTML, CSS and PHP languages. The goal is to look like the "Allo Ciné" site and generate in PHP a search bar, member spaces and connection with dynamic film pages from the data of a database.<br/><br/>
+		<img class="icon" alt="html" src="https://romainquercy.fr/wp-content/uploads/2019/03/html.png"/>
+		<img class="icon" alt="css" src="https://nelsonricardo.pt/wp-content/uploads/2020/10/css.png"/>
+		<img class="icon" alt="php" src="https://pics.freeicons.io/uploads/icons/png/2132470731553750209-512.png"/>
+		</p>
+
+		<img id="pixels" alt="photo" src="../development/pixels.png" width="100%"/>
+		<img id="pixels2" alt="photo" src="../development/pixels2.png" width="100%"/>
+		<h3 id="pixels">PIXELS</h3>
+		<p id="pixels">This project changes a bit from the others, we were able to modify a pixelated image and change its color and the positioning of pixels thanks to the Javascript language. As you can see here with the basic rabbit on a green background that ends up with a galaxy background image.<br/><br/>
+		<img class="icon" alt="javascript" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"/>
+		<img class="icon" alt="html" src="https://romainquercy.fr/wp-content/uploads/2019/03/html.png"/>
+		</p>
+
+		<img id="imc" alt="photo" src="../development/imc.png" width="100%"/>
+		<img id="imc2" alt="photo" src="../development/imc2.png" width="100%"/>
+		<h3 id="imc">IMC</h3>
+		<p id="imc">IMC is one of the first mobile applications, programmed in Angular and Ionic. We had to create forms, titles and make an algorithm to know the IMC from weight and height.
+			<br/><br/>
+		<img class="icon" alt="angular" src="http://angular.kr/assets/images/logos/angular/angular.png"/>
+		<img class="icon" alt="ionic" src="https://fr.naru.tech/storage/2017/10/ionic_1307248.png"/>
+		</p>
+
+		<img id="grid" alt="photo" src="../development/grid.png" width="100%"/>
+		<img id="grid2" alt="photo" src="../development/grid2.png" width="100%"/>
+		<h3 id="grid">GRID & FLEXIBLE</h3>
+		<p id="grid">Arriving in the 3rd year, we started with a reproduction of a site model. The goal is to use the following CSS tools: SASS, GRID and Flexibles. This responsive and adaptable site with all screens is made in HTML CSS SASS.<br/><br/>
+		<img class="icon" alt="html" src="https://romainquercy.fr/wp-content/uploads/2019/03/html.png"/>
+		<img class="icon" alt="css" src="https://nelsonricardo.pt/wp-content/uploads/2020/10/css.png"/>
+		<img class="icon" alt="sass" src="https://cdn.iconscout.com/icon/free/png-512/sass-226054.png"/>
+		<img class="icon" alt="git" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+		<img class="icon" alt="github" src="http://pngimg.com/uploads/github/github_PNG40.png"/>
+		</p>
+
+		<img id="twitter" alt="photo" src="../development/twitter.png" width="100%"/>
+		<img id="twitter2" alt="photo" src="../development/twitter2.png" width="100%"/>
+		<h3 id="twitter">TWITTER APP</h3>
+		<p id="twitter">Twitter App is a web application that takes the role of twitter which means : post a tweet, view it, see the list of tweets and users or just one in particular. This application uses a phpMyAdmin database and works with PHP, Eloquent and MVC method (Model, View, Controller).<br/><br/>
+		<img class="icon" alt="html" src="https://romainquercy.fr/wp-content/uploads/2019/03/html.png"/>
+		<img class="icon" alt="css" src="https://nelsonricardo.pt/wp-content/uploads/2020/10/css.png"/>
+		<img class="icon" alt="php" src="https://pics.freeicons.io/uploads/icons/png/2132470731553750209-512.png"/>	
+		<img class="icon" alt="laravel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"/>
+		<img class="icon" alt="git" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+		<img class="icon" alt="github" src="http://pngimg.com/uploads/github/github_PNG40.png"/>
+		</p>
+
+		<img id="trattoria" alt="photo" src="../development/trattoria.png" width="100%"/>
+		<img id="trattoria2" alt="photo" src="../development/trattoria2.png" width="100%"/>
+		<h3 id="trattoria">TRATTORIA</h3>
+		<p id="trattoria">Trattoria is a restaurant located in Nancy. We essentially produced the design of the project by studying the different constraints and creating diagrams such as Use Case, UML, activity or a User Story Mapping.<br/><br/>
+		<img class="icon" alt="uml" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/UML_logo.svg/400px-UML_logo.svg.png"/>
+		<img class="icon" alt="php" src="https://pics.freeicons.io/uploads/icons/png/2132470731553750209-512.png"/>	
+		<img class="icon" alt="git" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+		<img class="icon" alt="github" src="http://pngimg.com/uploads/github/github_PNG40.png"/>
+		</p>
+
+		<img id="mediaphoto" alt="photo" src="../development/mediaphoto.png" width="100%"/>
+		<img id="mediaphoto2" alt="photo" src="../development/mediaphoto2.png" width="100%"/>
+		<h3 id="mediaphoto">MEDIAPHOTO</h3>
+		<p id="mediaphoto">Media Photo was the first real project where we had to create a web-based gallery management application a bit like Pinterest. Whether it is the design, organization, integration, or programming from A to Z we as a team were able to produce the entire mission. <br/><br/>
+		<img class="icon" alt="uml" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/UML_logo.svg/400px-UML_logo.svg.png"/>
+		<img class="icon" alt="html" src="https://romainquercy.fr/wp-content/uploads/2019/03/html.png"/>
+		<img class="icon" alt="css" src="https://nelsonricardo.pt/wp-content/uploads/2020/10/css.png"/>
+		<img class="icon" alt="php" src="https://pics.freeicons.io/uploads/icons/png/2132470731553750209-512.png"/>	
+		<img class="icon" alt="laravel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"/>
+		<img class="icon" alt="git" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+		<img class="icon" alt="github" src="http://pngimg.com/uploads/github/github_PNG40.png"/>
+		</p>
+
+		<img id="interop" alt="photo" src="../development/interop.png" width="100%"/>
+		<img id="interop2" alt="photo" src="../development/interop2.png" width="100%"/>
+		<h3 id="interop">INTEROPERABILITE</h3>
+		<p id="interop">This task in Interoperability taught us to retrieve open data in XML or JSON and to integrate it in a Map in Javascript. First, we used XML/ XSLT to produce an HTML/CSS rendering and then we learned how to use PHP. The data came from the official website of the city of Nancy (Weather, Air Quality, Works, Bike Station, etc.).<br/><br/>
+		<img class="icon" alt="xml" src="https://cdn.iconscout.com/icon/free/png-512/xml-file-2330558-1950399.png"/>
+		<img class="icon" alt="xsl" src="https://findicons.com/files/icons/1636/file_icons_vs_3/256/xsl.png"/>
+		<img class="icon" alt="json" src="https://cdn.iconscout.com/icon/free/png-512/json-file-1-504451.png"/>
+		<img class="icon" alt="php" src="https://pics.freeicons.io/uploads/icons/png/2132470731553750209-512.png"/>
+		<img class="icon" alt="git" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+		<img class="icon" alt="github" src="http://pngimg.com/uploads/github/github_PNG40.png"/>
+		</p>
+
+		<img id="battle" alt="photo" src="../development/amandao.png" width="100%"/>
+		<img id="battle2" alt="photo" src="../development/amandao.png" width="100%"/>
+		<h3 id="battle">THE BATTLE</h3>
+		<p id="battle">WARNING! Following projects are still ongoing and not completed.
+		The Battle is a mobile app created with Android Studio, Flutter and Dart. The goal is to display a list of monsters and select them to create teams. There is also a data sheet for each character. 
+<br/><br/>
+		<img class="icon" alt="flutter" src="https://cdn.iconscout.com/icon/free/png-512/flutter-2038877-1720090.png"/>
+		<img class="icon" alt="dart" src="https://avatars.githubusercontent.com/u/1609975?s=280&v=4"/>
+		<img class="icon" alt="android" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Breezeicons-apps-48-android-studio.svg/1024px-Breezeicons-apps-48-android-studio.svg.png"/>
+		<img class="icon" alt="git" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+		<img class="icon" alt="github" src="http://pngimg.com/uploads/github/github_PNG40.png"/>
+		</p>
+
+		<img id="coop" alt="photo" src="../development/coop.png" width="100%"/>
+		<img id="coop2" alt="photo" src="../development/coop2.png" width="100%"/>
+		<h3 id="coop">CO'OP</h3>
+		<p id="coop">CO'OP is an application programmed partly in VueJS. It contains components and views with a connection part and forms to add messages and buttons to delete users and messages. <br/><br/>
+		<img class="icon" alt="vueJs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png"/>
+		<img class="icon" alt="javascript" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"/>
+		<img class="icon" alt="html" src="https://romainquercy.fr/wp-content/uploads/2019/03/html.png"/>
+		<img class="icon" alt="css" src="https://nelsonricardo.pt/wp-content/uploads/2020/10/css.png"/>
+		<img class="icon" alt="git" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+		<img class="icon" alt="github" src="http://pngimg.com/uploads/github/github_PNG40.png"/>
+		</p>
+
+		<img id="racingmaze" alt="photo" src="../development/maze.png" width="100%"/>
+		<img id="racingmaze2" alt="photo" src="../development/maze2.png" width="100%"/>
+		<h3 id="racingmaze">RACING MAZE</h3>
+		<p id="racingmaze">Finally Racing Maze is the biggest of the projects. This is a tutored project which consists of producing in NodeJS, Javascript, HTML/CSS and Socket.io a web game application. The goal of the game is to be able to play online with users in a maze, to finish first by retrieving all the coffers and avoiding monsters, to see the progress of the players and its ranking at the end of the game. All of it was made from A to Z in a team of 5 whether it was design, model, graphical interface or programming.<br/><br/>
+		<img class="icon" alt="uml" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/UML_logo.svg/400px-UML_logo.svg.png"/>
+		<img class="icon" alt="vueJs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png"/>
+		<img class="icon" alt="nodeJs" src="https://www.excelsiortechnologies.com/img/about/node-js.png"/>
+		<img class="icon" alt="socket" src="http://assets.stickpng.com/images/58482deccef1014c0b5e4a64.png"/>
+		<img class="icon" alt="javascript" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"/>
+		<img class="icon" alt="html" src="https://romainquercy.fr/wp-content/uploads/2019/03/html.png"/>
+		<img class="icon" alt="css" src="https://nelsonricardo.pt/wp-content/uploads/2020/10/css.png"/>
+		<img class="icon" alt="git" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+		<img class="icon" alt="github" src="http://pngimg.com/uploads/github/github_PNG40.png"/>
+		</p>
+		
+	</section>
+	<footer>
+		<a href="https://www.instagram.com/slahinoo83/"><img class="icon" alt="instagram" src="https://www.pngkey.com/png/full/283-2831746_insta-icon-instagram.png"/></a>
+		<a href="https://www.linkedin.com/in/yassine-soua-323121205/"><img class="icon" alt="linkedin" src="https://www.linkmobility.fr/wp-content/uploads/2015/11/linkedin-icon.png"/></a>
+		<a href="https://github.com/slahino"><img class="icon" alt="github" src="https://img.utdstc.com/icon/b41/580/b41580675029b67195f428df8843d16945303ee9346bbe189dd98dc1210033c2:200"/></a>
+		<a href="mailto:souaa.yassine@gmail.com"><img class="icon" alt="gmail" src="https://image.flaticon.com/icons/png/512/355/355992.png"/></a>
+		<http://pngimg.com/uploads/github/github_PNG40.png

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Porfolio - Home</title>
+	<link rel="icon" type="image/png" href="../entete/slahino.png" />
+	<style type="text/css">
+		@font-face {
+			font-family: "Tahu Bullats Italic";
+			src: url('../fonts/Coolvetica rg.ttf');
+		}
+
+		body {
+			margin :  0px;
+			padding : 0px;
+			background-color: black;
+			font-family: "Tahu Bullats Italic";
+		}
+		header {
+			border-bottom: 5px black solid;
+			background-color: white;
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			margin :  0px;
+		}
+		footer {
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			margin :  0px;
+			background-color: black;
+			padding:  20px 20px 0px 20px;
+			color :  white;
+		}
+		ul {
+			padding :  0;
+			display : grid;
+			grid-template-columns: repeat(8,1fr);
+		}
+		.menu {
+			grid-column: 3/11;             
+    	}
+    	.menu li {
+   			list-style-type: none;  
+   			text-align: center; 
+   			padding : 0em 0.5em 0em 0.5em;
+		}
+		.menu a {
+    		margin :  auto;
+    		color: black;  
+    		text-decoration: none; 
+    		letter-spacing: 2px;
+		}
+		.logo {
+			margin-left: auto;
+			margin-right: auto;
+			width: 200px;
+		 	height: 100px; 
+		 	padding : 0px 0px 0px 0px;
+		}
+		.icon {
+			width: 50px;
+		 	height: 50px; 
+		}
+		section#presentation {
+			background-color: #ddd4d4;
+			display : grid;
+			grid-template-columns: repeat(18,1fr);
+			grid-template-rows: repeat(50,1fr);
+
+		}
+		h3 {
+			margin :  auto;
+			font-size: 1.7em;
+			color :  white;
+			letter-spacing: .2rem;
+			text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 3px 3px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+		}
+		section > p {
+			margin :  0;
+			font-size: 1.3em;
+			text-align: justify;
+			
+		}
+		footer > p {
+			grid-column: 5/11;
+			font-size: 1.5em;
+			text-align: right;
+		}
+		img#amande {
+			grid-column: 2/6;
+			grid-row: 2/6;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#america {
+			grid-column: 8/12;
+			grid-row: 2/6;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#pronos {
+			grid-column: 14/18;
+			grid-row: 2/6;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#praline {
+			grid-column:2/6;
+			grid-row: 12/16;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#suntrop {
+			grid-column: 8/12;
+			grid-row: 12/16;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#insta {
+			grid-column: 14/18;
+			grid-row: 12/16;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#fayou {
+			grid-column: 2/6;
+			grid-row: 22/26;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#panama {
+			grid-column: 8/12;
+			grid-row: 22/26;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#pnl {
+			grid-column: 14/18;
+			grid-row: 22/26;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#space {
+			grid-column: 2/6;
+			grid-row: 32/36;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#anais {
+			grid-column: 8/12;
+			grid-row: 32/36;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#oeuf {
+			grid-column: 14/18;
+			grid-row: 32/36;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#maserati {
+			grid-column: 2/6;
+			grid-row: 42/46;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		img#shoes {
+			grid-column: 8/12;
+			grid-row: 42/46;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		video#stadium {
+			grid-column: 14/18;
+			grid-row: 42/46;
+			margin-left:  auto;
+			margin-right: auto;
+		}
+		h3#amande{
+			grid-column: 2/6;
+			grid-row: 6/7;
+		}
+		h3#america {
+			grid-column: 8/12;
+			grid-row: 6/7;
+		}
+		h3#pronos {
+			grid-column: 14/18;
+			grid-row: 6/7;
+		}
+		h3#praline {
+			grid-column: 2/6;
+			grid-row: 16/17;
+		}
+		h3#suntrop {
+			grid-column: 8/12;
+			grid-row: 16/17;
+		}
+		h3#insta {
+			grid-column: 14/18;
+			grid-row: 16/17;
+		}
+		h3#fayou{
+			grid-column: 2/6;
+			grid-row: 26/27;
+		}
+		h3#panama {
+			grid-column: 8/12;
+			grid-row: 26/27;
+		}
+		h3#pnl {
+			grid-column: 14/18;
+			grid-row: 26/27;
+		}
+		h3#space{
+			grid-column: 2/6;
+			grid-row: 36/37;
+		}
+		h3#anais {
+			grid-column: 8/12;
+			grid-row: 36/37;
+		}
+		h3#oeuf {
+			grid-column: 14/18;
+			grid-row: 36/37;
+		}
+		h3#maserati{
+			grid-column: 2/6;
+			grid-row: 46/47;
+		}
+		h3#shoes {
+			grid-column: 8/12;
+			grid-row: 46/47;
+		}
+		h3#stadium {
+			grid-column: 14/18;
+			grid-row: 46/47;
+		}
+		p#amande{
+			grid-column: 2/6;
+			grid-row: 7/11;
+		}
+		p#america {
+			grid-column: 8/12;
+			grid-row: 7/11;
+		}
+		p#pronos {
+			grid-column: 14/18;
+			grid-row: 7/11;
+		}
+		p#praline{
+			grid-column: 2/6;
+			grid-row: 17/21;
+		}
+		p#suntrop{
+			grid-column: 8/12;
+			grid-row: 17/21;
+		}
+		p#insta{
+			grid-column: 14/18;
+			grid-row: 17/21;
+		}
+		p#fayou{
+			grid-column: 2/6;
+			grid-row: 27/31;
+		}
+		p#panama{
+			grid-column: 8/12;
+			grid-row: 27/31;
+		}
+		p#pnl{
+			grid-column: 14/18;
+			grid-row: 27/31;
+		}
+		p#space{
+			grid-column: 2/6;
+			grid-row: 37/41;
+		}
+		p#anais{
+			grid-column: 8/12;
+			grid-row: 37/41;
+		}
+		p#oeuf{
+			grid-column: 14/18;
+			grid-row: 37/41;
+		}
+		p#maserati{
+			grid-column: 2/6;
+			grid-row: 47/51;
+		}
+		p#shoes{
+			grid-column: 8/12;
+			grid-row: 47/51;
+		}
+		p#stadium{
+			grid-column: 14/18;
+			grid-row: 47/51;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="../index.html">
+			<img class="logo" alt="Logo" src="../entete/slahino.png"/>
+		</a>
+		<div class="menu">
+			<ul>
+			    <li>
+			        <a href="../index.html"><img class="icon" src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" /><br />Home page</a>
+			    </li>
+			    <li>
+			        <a href="draw.html"><img class="icon" src="https://icons-for-free.com/iconfiles/png/512/brush+design+draw+drawing+icon-1320168140159902387.png"/><br />Drawing</a>
+			    </li>
+			    <li>
+			        <a href="graphism.html"><img class="icon" src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/illustration-icon.png"/><br />Graphism</a>
+			    </li>
+			    <li>
+			        <a href="modeling.html"><img class="icon" src="https://image.flaticon.com/icons/png/512/1454/1454773.png"/><br />Modeling 3D</a>
+			    </li>
+			    <li>
+			        <a href="website.html"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Puzzle-grey.png"/><br />Website teaser</a>
+			    </li>
+			    <li>
+			        <a href="development.html"><img class="icon" src="https://i.pinimg.com/originals/e6/d8/ab/e6d8ab6b59c0b25c5587f6df309f360a.png"/><br />Development web<br /></a>
+			    </li>
+			    <li>
+			        <a href="tutorial.html"><img class="icon" src="https://www.rhumraisin.com/img/video-camera-icon.png"/><br />Tutorial video</a>
+			    </li>
+			    <li>
+			        <a href="contact.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle-icons-contacts.svg/1024px-Circle-icons-contacts.svg.png"/><br />Contact me</a>
+			    </li>
+			</ul>
+		</div>
+	</header>
+	<img src="../entete/graphism.jpg" width="100%"/>
+	<section id="presentation">	
+
+		<img id="amande" alt="photo" src="../logos/amandao.png" width="100%"/>
+		<h3 id="amande">AMANDAO</h3>
+		<p id="amande">I was able to produce the first logo for a company that does not own one. The goal is to create a logo that recalls chocolate and almonds. The rounded, soft and refined side recalls sweets. Finally, the green logo recalls the 100% organic vegetation and chocolate of this company.  
+		</p>
+
+		<img id="america" alt="photo" src="../logos/america.png" width="100%"/>
+		<h3 id="america">AMERICAN DREAMS</h3>
+		<p id="america">This logo aims to bring together all areas to make the perfect American dream. Whether it’s music, cinema with the big FOX studios, monuments like the Statue of Liberty, huge fast foods with their steaks and big sodas or sports and big brands. 
+		</p>
+
+		<img id="pronos" alt="photo" src="../logos/Fpronos.png" width="100%"/>
+		<h3 id="pronos">FAYOU PRONOS</h3>
+		<p id="pronos">This logo is made outside of classes for a person who wanted to make sports bets. The FP is the initials of his real name: FAYOU PRONOS. 
+		</p>
+
+		<img id="praline" alt="photo" src="../logos/praline_addict.png" width="100%"/>
+		<h3 id="praline">PRALINÉ ADDICT</h3>
+		<p id="praline">L"Praliné Addict" is a delicious cake company for any event. Its pink cupcake represents the sweet and delicious side of the treats. 
+		</p>
+		
+		<img id="suntrop" alt="photo" src="../logos/suntrop.png" width="100%"/>
+		<h3 id="suntrop">SUNTROP</h3>
+		<p id="suntrop">"Sun trop" is a clothing company for women. I made this logo but also the website of this lady who sells summer clothes as you could see with this little hat. Summer is coming !! 
+		</p>
+
+		<img id="insta" alt="photo" src="../logos/logo_insta.png" width="100%"/>
+		<h3 id="insta">LE DROIT CHEMIN</h3>
+		<p id="insta">This logo was made for an Instagram page about the Muslim religion. The goal is to make reminders to believers with a small design side. It represents the soft sky like a paradise.  
+		</p>
+
+		<img id="fayou" alt="photo" src="../illustration/fayou.jpg" width="100%"/>
+		<h3 id="fayou">FAYOU PRONOS</h3>
+		<p id="fayou">Here are illustrations and posters like this one which is the sequel to Fayou pronos. In addition to making logos, he wanted a poster to give the prognosis. At least I hope he wins. 
+		</p>
+
+		<img id="panama" alt="photo" src="../illustration/panama.png" width="100%"/>
+		<h3 id="panama">VENEZUELA</h3>
+		<p id="panama">Does this poster make you think of anything? It is the Che Guevara, yes this activist from Venezuela. This poster with my face aims to give the devastating aspect of the demonstrations in Venezuela. 
+		</p>
+
+		<img id="pnl" alt="photo" src="../illustration/pnl.png" width="100%"/>
+		<h3 id="pnl">PNL 70'S</h3>
+		<p id="pnl">The purpose of this exercise was to take a new poster and make it one of the 70s. For this I chose the famous band that hits PNL. 
+		</p>
+
+		<img id="space" alt="photo" src="../illustration/space.png" width="100%"/>
+		<h3 id="space">SPACE TOUR</h3>
+		<p id="space">That poster was my very first. This illustration shows the invasion of two planets fighting in space. It’s just science fiction don’t worry!  
+		</p>
+
+		<img id="anais" alt="photo" src="../illustration/anais.png" width="100%"/>
+		<h3 id="anais">ANAIS</h3>
+		<p id="anais">Anaïs is a person that I like very much so I decided to reproduce her portrait in infographic. The white complexion, the very red lips, even if there are no eyes it is still pretty without them. 
+		</p>
+
+		<img id="oeuf" alt="photo" src="../illustration/oeuf.png" width="100%"/>
+		<h3 id="oeuf">BREAKFAST</h3>
+		<p id="oeuf">Oh, look eggs! This illustration was made to show the technicality of the software more than to make your mouth water. For example, we can see gradations of white or shadows or even reflections on the egg yolk. 
+		</p>
+
+
+		<img id="maserati" alt="photo" src="../illustration/maserati.png" width="100%"/>
+		<h3 id="maserati">MASERATI 3D</h3>
+		<p id="maserati">This poster aims to make us use the 3 Dimension of the Photoshop software. I chose myself the brand and the background which for me gives a dark and metallurgical side of Maserati.  
+		</p>
+
+		<img id="shoes" alt="photo" src="../illustration/shoes.png" width="100%"/>
+		<h3 id="shoes">NEW BRAND</h3>
+		<p id="shoes">This one has the goal to make us use textures of the Photoshop software. We can see that different textures are used in shoes such as leather, rubber, fabric or suede.
+		</p>
+
+
+		<video id="stadium" controls src="../illustration/stadium.mp4" width="100%" poster="../illustration/stadium tacos.jpg"></video>
+		<h3 id="stadium">STADIUM TACOS</h3>
+		<p id="stadium">Finally, to conclude this series of graphics, you can see no picture but a video of some performances I did for a restaurant. Information was in the specifications, but the design is from me. 
+		</p>
+
+	</section>
+	<footer>
+		<a href="https://www.instagram.com/slahinoo83/"><img class="icon" alt="instagram" src="https://www.pngkey.com/png/full/283-2831746_insta-icon-instagram.png"/></a>
+		<a href="https://www.linkedin.com/in/yassine-soua-323121205/"><img class="icon" alt="linkedin" src="https://www.linkmobility.fr/wp-content/uploads/2015/11/linkedin-icon.png"/></a>
+		<a href="https://github.com/slahino"><img class="icon" alt="github" src="https://img.utdstc.com/icon/b41/580/b41580675029b67195f428df8843d16945303ee9346bbe189dd98dc1210033c2:200"/></a>
+		<a href="mailto:souaa.yassine@gmail.com"><img class="icon" alt="gmail" src="https://image.flaticon.com/icons/png/512/355/355992.png"/></a>
+		<p>Copyright 2021 &copy;</p>
+	</footer>
+</body>
+</html>
