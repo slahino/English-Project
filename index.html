@@ -30,12 +30,14 @@
 			padding:  20px 20px 0px 20px;
 			color :  white;
 		}
+
 		ul {
 			padding :  0;
 			display : grid;
 			grid-template-columns: repeat(8,1fr);
 		}
-		@media screen and (max-width: 1450px) {
+
+		@media screen and (max-width: 900px) {
 			ul {
 				padding :  0;
 				display : grid;
@@ -43,12 +45,18 @@
 			}	
 		}
 
-		@media screen and (max-width: 700px) {
+		@media screen and (max-width: 600px) {
 			ul {
 				padding :  0;
 				display : grid;
 				grid-template-columns: repeat(3,1fr);
 			}	
+		}
+
+		@media screen and (max-width: 600px) {
+			.menu {
+			grid-column: 3/6;             
+    		}
 		}
 
 		.menu {
@@ -72,7 +80,7 @@
 		}
 
 		@media screen and (max-width: 700px) {
-			.menu a p{
+			.menu p.title{
 				display :  none;
 			}	
 		}
@@ -138,7 +146,7 @@
 			}
 		}
 
-		@media screen and (max-width: 950px)  {
+		@media screen and (max-width: 1000px)  {
 
 			section#presentation {
 			display : grid;
@@ -154,6 +162,16 @@
 			display : grid;
 			grid-template-columns: repeat(10,1fr);
 			grid-template-rows: repeat(10,1fr);
+
+			}
+		}
+
+		@media screen and (max-width: 583px)  {
+
+			section#presentation {
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			grid-template-rows: repeat(7,1fr);
 
 			}
 		}
@@ -200,6 +218,17 @@
 			}
 		}
 
+		@media screen and (max-width: 583px)  {
+
+			.portrait {
+			grid-column: 1/11;
+			grid-row :  2/3;
+			padding :  0;
+			width :  90%;
+			margin :  0px;
+			}
+		}
+
 		h3 {
 			margin :  0;
 			grid-column: 5/10;
@@ -216,6 +245,7 @@
 			h3 {
 			grid-column: 2/10;
 			grid-row: 6/7;
+			padding :  0;
 			}
 		}
 
@@ -234,6 +264,16 @@
 			h3 {
 			grid-column: 2/10;
 			grid-row: 6/7;
+			font-size: 1.5em;
+
+			}
+		}
+
+		@media screen and (max-width: 583px)  {
+
+			h3 {
+			grid-column: 2/10;
+			grid-row: 2/3;
 			font-size: 1.5em;
 
 			}
@@ -258,7 +298,7 @@
 		}
 
 
-		@media screen and (max-width: 950px)  {
+		@media screen and (max-width: 1000px)  {
 
 			h2 {
 			grid-column: 2/10;
@@ -272,6 +312,14 @@
 			h2 {
 			grid-column: 2/10;
 			grid-row: 10/11;
+			}
+		}
+
+		@media screen and (max-width: 583px)  {
+
+			h2 {
+			grid-column: 2/10;
+			grid-row: 5/6;
 			}
 		}
 
@@ -290,21 +338,22 @@
 			section > p {
 			margin :  0;
 			grid-column: 2/10;
-			grid-row: 7/11;
+			grid-row: 7/8;
 			font-size: 1.5em;
 			text-align: justify;
-			
+			padding :  0;
 			}
 		}
 
-		@media screen and (max-width: 950px)  {
+		@media screen and (max-width: 1000px)  {
 
 			section > p {
 			margin :  0;
 			grid-column: 2/10;
-			grid-row: 7/11;
+			grid-row: 7/9;
 			font-size: 1.5em;
 			text-align: justify;
+			padding :  0;
 			}
 		}
 
@@ -317,6 +366,19 @@
 			grid-row: 7/11;
 			font-size: 1.5em;
 			text-align: justify;
+			}
+		}
+
+
+		@media screen and (max-width: 583px)  {
+
+			section > p {
+			margin :  0;
+			grid-column: 2/10;
+			grid-row: 6/7;
+			font-size: 1.5em;
+			text-align: justify;
+			padding :  0;
 			}
 		}
 
@@ -336,35 +398,35 @@
 		<div class="menu">
 			<ul>
 			    <li>
-			        <a href="index.html"><img class="icon" src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" /><br /><p>Home page</p></a>
+			        <a href="index.html"><img class="icon" src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" /><br /><p class="title">Home page</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/draw.html"><img class="icon" src="https://icons-for-free.com/iconfiles/png/512/brush+design+draw+drawing+icon-1320168140159902387.png"/><br /><p>Drawing</p></a>
+			        <a href="pages/draw.html"><img class="icon" src="https://icons-for-free.com/iconfiles/png/512/brush+design+draw+drawing+icon-1320168140159902387.png"/><br /><p class="title">Drawing</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/graphism.html"><img class="icon" src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/illustration-icon.png"/><br /><p>Graphism</p></a>
+			        <a href="pages/graphism.html"><img class="icon" src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/illustration-icon.png"/><br /><p class="title">Graphism</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/modeling.html"><img class="icon" src="https://image.flaticon.com/icons/png/512/1454/1454773.png"/><br /><p>Modeling 3D</p></a>
+			        <a href="pages/modeling.html"><img class="icon" src="https://image.flaticon.com/icons/png/512/1454/1454773.png"/><br /><p class="title">Modeling 3D</p class="title"></a>
 			    </li>
 			    <li>
-			        <a href="pages/website.html"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Puzzle-grey.png"/><br /><p>Website teaser</p></a>
+			        <a href="pages/website.html"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Puzzle-grey.png"/><br /><p class="title">Website teaser</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/development.html"><img class="icon" src="https://i.pinimg.com/originals/e6/d8/ab/e6d8ab6b59c0b25c5587f6df309f360a.png"/><br /><p>Development web</p><br /></a>
+			        <a href="pages/development.html"><img class="icon" src="https://i.pinimg.com/originals/e6/d8/ab/e6d8ab6b59c0b25c5587f6df309f360a.png"/><br /><p class="title">Development web</p><br /></a>
 			    </li>
 			    <li>
-			        <a href="pages/tutorial.html"><img class="icon" src="https://www.rhumraisin.com/img/video-camera-icon.png"/><br /><p>Tutorial video</p></a>
+			        <a href="pages/tutorial.html"><img class="icon" src="https://www.rhumraisin.com/img/video-camera-icon.png"/><br /><p class="title">Tutorial video</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/contact.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle-icons-contacts.svg/1024px-Circle-icons-contacts.svg.png"/><br /><p>Contact me</p></a>
+			        <a href="pages/contact.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle-icons-contacts.svg/1024px-Circle-icons-contacts.svg.png"/><br /><p class="title">Contact me</p></a>
 			    </li>
 			</ul>
 		</div>
 	</header>
 	<img src="entete/welcome.jpg" width="100%"/>
 	<section id="presentation">	
-		<img class="portrait" alt="photo" src="presentation/photo cv.jpg" width="400px"/>
+		<img class="portrait" alt="photo" src="presentation/photo cv.jpg"/>
 		<h3>Bachelor’s Degree in Design-Integration of Web Applications Services.</h3>	
 		<p>Hello, my name is Yassine Soua, I am 21 years old and I am a student in bachelor’s degree in Design-integration of web applications and services. The goal is to developed application, web site and used a tool and languages of programming.
 		Before this year I went in a School in a domain of multimedia and Internet where there I learn Web Design, Marketing, and audio-visual Production. 
