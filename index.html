@@ -35,6 +35,22 @@
 			display : grid;
 			grid-template-columns: repeat(8,1fr);
 		}
+		@media screen and (max-width: 1450px) {
+			ul {
+				padding :  0;
+				display : grid;
+				grid-template-columns: repeat(4,1fr);
+			}	
+		}
+
+		@media screen and (max-width: 700px) {
+			ul {
+				padding :  0;
+				display : grid;
+				grid-template-columns: repeat(3,1fr);
+			}	
+		}
+
 		.menu {
 			grid-column: 3/11;             
     	}
@@ -49,6 +65,18 @@
     		text-decoration: none; 
     		letter-spacing: 2px;
 		}
+		@media screen and (max-width: 1450px) {
+			.menu a p{
+	    		font-size : 0.8em;
+			}	
+		}
+
+		@media screen and (max-width: 700px) {
+			.menu a p{
+				display :  none;
+			}	
+		}
+
 		.logo {
 			margin-left: auto;
 			margin-right: auto;
@@ -56,10 +84,42 @@
 		 	height: 100px; 
 		 	padding : 0px 0px 0px 0px;
 		}
+
+		@media screen and (max-width: 1450px)  {
+
+			.logo {
+				margin-left: auto;
+				margin-right: auto;
+				width: 300px;
+			 	height: 200px; 
+			 	padding : 0px 0px 0px 0px;
+			}
+		}
+
+		@media screen and (max-width: 1450px)  {
+
+			.logo {
+				margin-left: auto;
+				margin-right: auto;
+				width: 200px;
+			 	height: 100px; 
+			 	padding : 0px 0px 0px 0px;
+			}
+		}
+
 		.icon {
 			width: 50px;
 		 	height: 50px; 
 		}
+
+		@media screen and (max-width: 572px)  {
+
+			.icon {
+			width: 40px;
+		 	height: 40px; 
+			}
+		}
+
 		section#presentation {
 			background-color: #ddd4d4;
 			display : grid;
@@ -67,14 +127,79 @@
 			grid-template-rows: repeat(10,1fr);
 
 		}
-		.portrait {
+
+		@media screen and (max-width: 1450px)  {
+
+			section#presentation {
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			grid-template-rows: repeat(8,1fr);
+
+			}
+		}
+
+		@media screen and (max-width: 950px)  {
+
+			section#presentation {
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			grid-template-rows: repeat(9,1fr);
+
+			}
+		}
+
+		@media screen and (max-width: 704px)  {
+
+			section#presentation {
+			display : grid;
+			grid-template-columns: repeat(10,1fr);
+			grid-template-rows: repeat(10,1fr);
+
+			}
+		}
+
+			.portrait {
 			margin :  0;
 			padding :  4em;
 			grid-column: 2/5;
-			grid-row :  1/10;
+			grid-row :  2/10;
 			margin-left :  auto;
 			margin-right :  auto;
+			}
+
+		
+
+		@media screen and (max-width: 1450px)  {
+
+			.portrait {
+			grid-column: 2/10;
+			grid-row :  2/5;
+			padding :  0;
+			width :  60%;
+			}
 		}
+
+		@media screen and (max-width: 950px)  {
+
+			.portrait {
+			grid-column: 2/10;
+			grid-row :  2/5;
+			padding :  0;
+			width :  70%;
+			}
+		}
+
+
+		@media screen and (max-width: 704px)  {
+
+			.portrait {
+			grid-column: 2/10;
+			grid-row :  2/5;
+			padding :  0;
+			width :  80%;
+			}
+		}
+
 		h3 {
 			margin :  0;
 			grid-column: 5/10;
@@ -85,14 +210,71 @@
 			letter-spacing: .2rem;
 			text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 3px 3px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
 		}
+
+		@media screen and (max-width: 1450px)  {
+
+			h3 {
+			grid-column: 2/10;
+			grid-row: 6/7;
+			}
+		}
+
+		@media screen and (max-width: 950px)  {
+
+			h3 {
+			grid-column: 2/10;
+			grid-row: 6/7;
+			font-size: 1.5em;
+
+			}
+		}
+
+		@media screen and (max-width: 704px)  {
+
+			h3 {
+			grid-column: 2/10;
+			grid-row: 6/7;
+			font-size: 1.5em;
+
+			}
+		}
+
 		h2 {
 			margin :  0;
 			grid-column: 5/10;
 			grid-row: 9/10;
 			text-align: right;
-			font-size: 1.5em;
+			font-size: 1.7em;
 			padding-left:  2em;
 		}
+
+		@media screen and (max-width: 1450px)  {
+
+			h2 {
+			grid-column: 2/10;
+			grid-row: 8/9;
+			
+			}
+		}
+
+
+		@media screen and (max-width: 950px)  {
+
+			h2 {
+			grid-column: 2/10;
+			grid-row: 9/10;
+			
+			}
+		}
+
+		@media screen and (max-width: 704px)  {
+
+			h2 {
+			grid-column: 2/10;
+			grid-row: 10/11;
+			}
+		}
+
 		section > p {
 			margin :  0;
 			grid-column: 5/10;
@@ -102,6 +284,42 @@
 			padding-left :  2em;
 			
 		}
+
+		@media screen and (max-width: 1450px)  {
+
+			section > p {
+			margin :  0;
+			grid-column: 2/10;
+			grid-row: 7/11;
+			font-size: 1.5em;
+			text-align: justify;
+			
+			}
+		}
+
+		@media screen and (max-width: 950px)  {
+
+			section > p {
+			margin :  0;
+			grid-column: 2/10;
+			grid-row: 7/11;
+			font-size: 1.5em;
+			text-align: justify;
+			}
+		}
+
+
+		@media screen and (max-width: 704px)  {
+
+			section > p {
+			margin :  0;
+			grid-column: 2/10;
+			grid-row: 7/11;
+			font-size: 1.5em;
+			text-align: justify;
+			}
+		}
+
 		footer > p {
 			grid-column: 5/11;
 			font-size: 1.5em;
@@ -118,28 +336,28 @@
 		<div class="menu">
 			<ul>
 			    <li>
-			        <a href="index.html"><img class="icon" src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" /><br />Home page</a>
+			        <a href="index.html"><img class="icon" src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png" /><br /><p>Home page</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/draw.html"><img class="icon" src="https://icons-for-free.com/iconfiles/png/512/brush+design+draw+drawing+icon-1320168140159902387.png"/><br />Drawing</a>
+			        <a href="pages/draw.html"><img class="icon" src="https://icons-for-free.com/iconfiles/png/512/brush+design+draw+drawing+icon-1320168140159902387.png"/><br /><p>Drawing</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/graphism.html"><img class="icon" src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/illustration-icon.png"/><br />Graphism</a>
+			        <a href="pages/graphism.html"><img class="icon" src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/illustration-icon.png"/><br /><p>Graphism</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/modeling.html"><img class="icon" src="https://image.flaticon.com/icons/png/512/1454/1454773.png"/><br />Modeling 3D</a>
+			        <a href="pages/modeling.html"><img class="icon" src="https://image.flaticon.com/icons/png/512/1454/1454773.png"/><br /><p>Modeling 3D</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/website.html"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Puzzle-grey.png"/><br />Website teaser</a>
+			        <a href="pages/website.html"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Puzzle-grey.png"/><br /><p>Website teaser</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/development.html"><img class="icon" src="https://i.pinimg.com/originals/e6/d8/ab/e6d8ab6b59c0b25c5587f6df309f360a.png"/><br />Development web<br /></a>
+			        <a href="pages/development.html"><img class="icon" src="https://i.pinimg.com/originals/e6/d8/ab/e6d8ab6b59c0b25c5587f6df309f360a.png"/><br /><p>Development web</p><br /></a>
 			    </li>
 			    <li>
-			        <a href="pages/tutorial.html"><img class="icon" src="https://www.rhumraisin.com/img/video-camera-icon.png"/><br />Tutorial video</a>
+			        <a href="pages/tutorial.html"><img class="icon" src="https://www.rhumraisin.com/img/video-camera-icon.png"/><br /><p>Tutorial video</p></a>
 			    </li>
 			    <li>
-			        <a href="pages/contact.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle-icons-contacts.svg/1024px-Circle-icons-contacts.svg.png"/><br />Contact me</a>
+			        <a href="pages/contact.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle-icons-contacts.svg/1024px-Circle-icons-contacts.svg.png"/><br /><p>Contact me</p></a>
 			    </li>
 			</ul>
 		</div>
